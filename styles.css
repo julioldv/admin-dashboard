@@ -41,6 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 
 *{outline: 1px solid red;}
 
+:root{
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+}
+
 ul,li{
  list-style: none;
  margin: 0;
@@ -69,30 +75,31 @@ header{
 .search-bar{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--space-sm);
 }
 
 .user-notifications-section{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--space-sm);
+}
+
+
+.bottom-header-row{
+  display: grid;
+ grid-template-columns: 1fr auto;
 }
 
 .user-greetings-section{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--space-md);
 }
 
 .header-buttons{
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.bottom-header-row{
-  display: grid;
- grid-template-columns: 1fr auto;
+  gap: var(--space-md);
 }
 
 .sidebar{
