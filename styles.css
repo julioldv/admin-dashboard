@@ -58,7 +58,41 @@ header{
   grid-row: 1/2;
   grid-column: 2/3;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: auto auto;
+}
+
+.top-header-row{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-notifications-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-greetings-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-buttons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom-header-row{
+  display: grid;
+ grid-template-columns: 1fr auto;
 }
 
 .sidebar{
