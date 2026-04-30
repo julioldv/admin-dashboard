@@ -68,6 +68,7 @@ h6 {
   --space-sm: 8px;
   --space-md: 16px;
   --space-lg: 24px;
+  --secondary-color: #1992d4;
 }
 
 ul,
@@ -80,7 +81,7 @@ li {
 .main-dashboard-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-rows: auto 1fr;
 }
 
@@ -90,16 +91,28 @@ header {
   display: grid;
   grid-template-rows: auto auto;
   padding: var(--space-md) var(--space-lg);
+  gap: var(--space-lg);
 }
 
 .top-header-row {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-lg);
 }
 .search-bar {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+}
+
+.search-bar input{
+  flex: 1;
+  height: 32px;
+  padding: 0 var(--space-md);
+  border: none;
+  border-radius: 999px;
+  background-color: #e2e8f0;
 }
 
 .user-notifications-section {
@@ -108,9 +121,11 @@ header {
   gap: var(--space-sm);
 }
 
+
 .bottom-header-row {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 .user-greetings-section {
@@ -125,9 +140,31 @@ header {
   gap: var(--space-md);
 }
 
+.header-buttons button{
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  color: white;
+  background-color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.small-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #facc15;
+}
+
+.large-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #facc15;
+}
+
 .sidebar {
   color: white;
-  background-color: aqua;
+  background-color: var(--secondary-color);
   grid-column: 1/2;
   grid-row: 1/3;
 }
