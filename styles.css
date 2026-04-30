@@ -60,9 +60,9 @@ h6 {
 
 /*  MY CSS STARTS HERE*/
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 :root {
   --space-sm: 8px;
@@ -71,11 +71,19 @@ h6 {
   --secondary-color: #1992d4;
 }
 
+body{
+  height: 100vh;
+}
+
 ul,
 li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.icon{
+  width: 30px;
 }
 
 .main-dashboard-container {
@@ -146,6 +154,7 @@ header {
   color: white;
   background-color: var(--secondary-color);
   font-weight: 700;
+  border: none;
 }
 
 .small-avatar {
@@ -167,6 +176,7 @@ header {
   background-color: var(--secondary-color);
   grid-column: 1/2;
   grid-row: 1/3;
+  display: grid;
 }
 
 .main-content {
