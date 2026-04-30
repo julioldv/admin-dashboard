@@ -71,7 +71,7 @@ h6 {
   --secondary-color: #1992d4;
 }
 
-body{
+body {
   height: 100vh;
 }
 
@@ -82,7 +82,7 @@ li {
   padding: 0;
 }
 
-.icon{
+.icon {
   width: 30px;
 }
 
@@ -114,7 +114,7 @@ header {
   gap: var(--space-sm);
 }
 
-.search-bar input{
+.search-bar input {
   flex: 1;
   height: 32px;
   padding: 0 var(--space-md);
@@ -128,7 +128,6 @@ header {
   align-items: center;
   gap: var(--space-sm);
 }
-
 
 .bottom-header-row {
   display: grid;
@@ -148,7 +147,7 @@ header {
   gap: var(--space-md);
 }
 
-.header-buttons button{
+.header-buttons button {
   padding: 0.5rem 1.5rem;
   border-radius: 999px;
   color: white;
@@ -179,7 +178,7 @@ header {
   padding: var(--space-lg);
   display: grid;
   align-content: start;
-  gap: var(--space-lg);
+  gap: calc(var(--space-lg) * 2);
 }
 
 .sidebar li {
@@ -192,10 +191,14 @@ header {
 .sidebar img {
   width: 24px;
   height: 24px;
+  filter: brightness(0) invert(1);
 }
-
 .sidebar-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
 }
 
 .sidebar-title img {
@@ -207,6 +210,11 @@ header {
 .sidebar-settings {
   display: grid;
   gap: var(--space-md);
+}
+
+.sidebar li:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .main-content {
