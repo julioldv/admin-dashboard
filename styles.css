@@ -234,8 +234,22 @@ header {
 }
 
 .card {
-  padding: 1rem;
-  outline: 1px solid black;
+  padding: var(--space-lg);
+  background-color: white;
+  border-radius: 8px;
+  border-left: 8px solid #f0b429;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+.card h3{
+  margin-bottom: var(--space-sm);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
 }
 
 .side-content {
