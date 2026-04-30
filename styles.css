@@ -186,6 +186,7 @@ header {
   align-items: center;
   gap: var(--space-md);
   font-weight: 700;
+  padding: 4px 0;
 }
 
 .sidebar img {
@@ -210,6 +211,7 @@ header {
 .sidebar-settings {
   display: grid;
   gap: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
 .sidebar li:hover {
