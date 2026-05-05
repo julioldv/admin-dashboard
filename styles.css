@@ -324,3 +324,35 @@ header {
   padding-bottom: var(--space-md);
   margin-bottom: var(--space-md);
 }
+
+.trending{
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: start;
+  gap: var(--space-sm);
+}
+
+.trending-container {
+  background-color: white;
+  padding: var(--space-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: var(--space-md);
+}
+
+.trending-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: var(--space-md);
+}
+
+.user-icon {
+  grid-row: 1 / 3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #facc15;
+}
+
