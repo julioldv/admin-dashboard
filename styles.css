@@ -225,12 +225,31 @@ header {
   grid-template-columns: 3fr 1fr;
   padding: 1rem;
   gap: 1rem;
+  background-color: #e2e8f0;
+}
+
+.projects h2,
+.announcements h2,
+.trending h2 {
+  line-height: 1.2;
+}
+
+.projects,
+.announcements {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-sm);
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+
+.cards-container,
+.announcements-container {
+  align-self: start;
 }
 
 .card {
@@ -277,5 +296,31 @@ header {
 
 .side-content {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: var(--space-lg);
+  align-content: start;
+}
+
+.announcements{
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: start;
+  gap: var(--space-sm);
+}
+
+.announcements-container {
+  background-color: white;
+  padding: var(--space-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-item{
+  padding: var(--space-sm);
+}
+
+.announcement-item:not(:last-child) {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-md);
 }
